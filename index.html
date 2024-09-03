@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dffba75db4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav >
+                <img src="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p></p>
+                <h1>Hi<span>!</span> I'm <span>Tanay</span><br>Welcome to my Page!!</h1>
+                
+                
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="new.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <p class="new" style="font-size: 20px;">
+                        I'm Tanay and I am currently in my final year of studies pursuing a BTech in Computer Science from Vellore Institute of Technology in Bhopal. Alongside my studies, I have developed a strong passion for crypto investing and trading, which has deepened my interest in finance and the fintech sector. My technical background in computer science has equipped me with strong analytical and problem-solving skills, which I apply to my investments and trading strategies. I have always been fascinated by the intersection of technology and finance, which has driven me to explore various fintech innovations and their potential impact on the financial industry. I love researching new projects in the market and make it a point to stay updated on the latest developments and trends. This passion for finance, combined with my technical expertise and commitment to continuous learning, makes me excited about opportunities where I can leverage both skill sets.
+                    </p>
+                    <br>
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Analyst</span><br>I excel in data cleaning, analysis, and visualization using tools like Excel, SQL, Python, and Tableau. I have strong statistical and problem-solving skills, allowing me to extract actionable insights from data. </li>
+                            <li><span>Business Analyst</span><br>I possess a combination of technical, analytical, and communication skills that allow me to bridge the gap between business needs and technology solution</li> 
+                            <li><span>Fundamental Analyst</span><br>I have a strong set of skills like Ratio Analysis, Valuation techniques like DCF, P/E and P/B that allow me to evaluate the intrinsic value of companies, industries, and markets.</li> 
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>DEC 2021- FEB 2022</span><br>Data Analyst Intern at Aeromat Creative Labs</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-ongoing</span><br>Pursuing Btech from VIT Bhopal University In CSE with a Grade of 8.8CGPA</li>
+                            <li><span>2021</span><br>Completed My Class XII Aditya Birla Public School with 88.6%</li>
+                            <li><span>2019</span><br>Completed My Class X From Sardar Patel Vidyalaya with 94%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services 
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Roles</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <br><br>
+                    <h2>BackEnd Developer <br> with (PHP-SQL)</h2>
+                    <br>
+                    <p>Proficient in developing and maintaining robust backend systems using PHP. Skilled in database management and optimization with SQL, ensuring efficient data handling and seamless integration with web applications.
+                    </p>
+                    <a href="#portfolio">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <br><br>
+                    <h2>FrontEnd Developer in HTML, CSS and JS
+                    </h2>
+                    <br>
+                    <p>As a Frontend Developer, I create responsive and interactive web interfaces using HTML, CSS, and JavaScript. I ensure that designs are translated into visually appealing and user-friendly websites, enhancing the overall user experience.</p>
+                    <a href="#portfolio">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <br><br>
+                    <h2>Database Developer in PHP and MySQL
+                    </h2>
+                    <br>
+                    <p>As a Database Developer, I specialize in designing, implementing, and managing databases using PHP and MySQL. I focus on optimizing data storage and retrieval processes to support seamless and efficient web application performance.</p>
+                    <a href="#portfolio">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <div id="portfolio">
+        <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+        <div class="work">
+        <img src="PROJECT.png">
+        <div class="layer">
+            <h3> Stock/Crypto Trading Strategy Using EMA, RSI, and MFI</h3>
+            <p> Developed an automated trading strategy using Pine Script on TradingView, combining 200-period EMA with RSI
+                and MFI indicators to create robust buy/sell signals, achieving a backtested annual return of 25%</p>
+            </div>
+        </div>
+        <div class="work">
+        <img src="PROJECT.png">
+        <div class="layer">
+            <h3>Brickage</h3>
+            <p>A House Price Prediction System where Users can input various criteria such as location, price range, and number of bedrooms and get the listing of flats available</p>
+            </div>
+        </div>
+        <div class="work">
+        <img src="PROJECT.png">
+        <div class="layer">
+            <h3>  Stock Price Prediction Using Sentiment Analysis
+            </h3>
+            <p> Conceptualized the financial API of Yahoo Finance to gather historical stock price data of over 10,000 data points
+                and extracted sentiment scores and polarity from financial news and social media data</p>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div id="contact">
+            <div class="container">
+            <div class="row">
+            <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p> <i class="fa-regular fa-paper-plane"></i>tanay.uplanchiwar@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+91 9427428361</p>
+            <div class="social-icons">
+            <a href="https://linkedin.com/in/tanayu/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Tanay-101"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:email@example.com"><i class="fa-solid fa-envelope"></i></a>
+    
+        </div>
+        <a href="Tanay-Uplanchiwar-CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                    </div>
+            </div>
+            </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @Tanay :/ made with <i class="fa-solid fa-dove"></i></p>
+            </div>
+            </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(event, tabname) {
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-links");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu() {
+        sidemeu.style.right = "0";
+        }
+        function closemenu(){
+        sidemeu.style.right = "-200px";
+        }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxtZlcCtMG_wQYgN_r2nhm8Pm71BqWdFfvgFByofVb-1T_6vfE5wWZaGgw0rIIjyc6x/exec';
+            const form = document.forms['submit-to-google-sheet']; 
+            const msg = document.getElementById("msg");
+        
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                        msg.innerHTML = "Thanks for message, I'll get back to you soon!!";
+                        setTimeout(function(){
+                            msg.innerHTML = "";
+                        }, 5000); 
+                        form.reset();
+                    })
+                    .catch(error => console.error('Error!', error.message));
+            });
+        </script>
+        
+</body>
+</html>
